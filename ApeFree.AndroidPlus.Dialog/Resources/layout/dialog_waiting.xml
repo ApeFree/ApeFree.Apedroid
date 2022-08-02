@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_dialog_content_view_waiting"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ProgressBar
+        android:id="@+id/pb_dialog_content_view_waiting"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:indeterminate="true"/>
+
+    <TextView
+        android:id="@+id/tv_dialog_content_view_waiting_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"/>
+
+</LinearLayout>
