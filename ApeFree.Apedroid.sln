@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApeFree.Apedroid.Core", "ApeFree.Apedroid.Core\ApeFree.Apedroid.Core.csproj", "{FE807987-86E7-4AAE-8BD1-4A960A59EF75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApeFree.Apedroid.Supplement.Mqtt", "ApeFree.Apedroid.Supplement.Mqtt\ApeFree.Apedroid.Supplement.Mqtt.csproj", "{2F08E835-3111-4ABF-9FBC-A8409F099DB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApeFree.Apedroid.Supplement.Mqtt.TestApp", "ApeFree.Apedroid.Supplement.Mqtt.TestApp\ApeFree.Apedroid.Supplement.Mqtt.TestApp.csproj", "{FF29343B-3AF3-4F9E-811A-4B32D6C68511}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApeFree.Apedroid.Permission", "ApeFree.Apedroid.Permission\ApeFree.Apedroid.Permission.csproj", "{A0295F68-CDFD-467D-8037-847DBBBD3B26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApeFree.Apedroid.Dialog", "ApeFree.Apedroid.Dialog\ApeFree.Apedroid.Dialog.csproj", "{7323B8E9-26BF-4F9D-8F00-2DF4049864FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE807987-86E7-4AAE-8BD1-4A960A59EF75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE807987-86E7-4AAE-8BD1-4A960A59EF75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE807987-86E7-4AAE-8BD1-4A960A59EF75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE807987-86E7-4AAE-8BD1-4A960A59EF75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F08E835-3111-4ABF-9FBC-A8409F099DB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F08E835-3111-4ABF-9FBC-A8409F099DB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F08E835-3111-4ABF-9FBC-A8409F099DB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F08E835-3111-4ABF-9FBC-A8409F099DB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF29343B-3AF3-4F9E-811A-4B32D6C68511}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF29343B-3AF3-4F9E-811A-4B32D6C68511}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF29343B-3AF3-4F9E-811A-4B32D6C68511}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FF29343B-3AF3-4F9E-811A-4B32D6C68511}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF29343B-3AF3-4F9E-811A-4B32D6C68511}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF29343B-3AF3-4F9E-811A-4B32D6C68511}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A0295F68-CDFD-467D-8037-847DBBBD3B26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0295F68-CDFD-467D-8037-847DBBBD3B26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0295F68-CDFD-467D-8037-847DBBBD3B26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0295F68-CDFD-467D-8037-847DBBBD3B26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7323B8E9-26BF-4F9D-8F00-2DF4049864FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7323B8E9-26BF-4F9D-8F00-2DF4049864FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7323B8E9-26BF-4F9D-8F00-2DF4049864FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7323B8E9-26BF-4F9D-8F00-2DF4049864FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3EFA047F-4471-49C5-9EA5-F6171671089D}
+	EndGlobalSection
+EndGlobal
