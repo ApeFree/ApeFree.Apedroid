@@ -56,6 +56,9 @@
     <Compile Include="Extensions\TypeExtension.cs" />
     <Compile Include="Extensions\ViewGroupExtension.cs" />
     <Compile Include="Lang\Bean.cs" />
+    <Compile Include="Permission\AutomaticStartupPermission.cs" />
+    <Compile Include="Permission\BatteryOptimizationsPermission.cs" />
+    <Compile Include="Permission\NotificationListenPermission.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Content\BroadcastReceiver.cs" />
