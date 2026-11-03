@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/samples/">
+    <Project Path="samples/ApeFree.Apedroid.Demo/ApeFree.Apedroid.Demo.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/ApeFree.Apedroid/ApeFree.Apedroid.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/ApeFree.Apedroid.Tests/ApeFree.Apedroid.Tests.csproj" />
+  </Folder>
+  <Project Path="../ApeFree.ApeDialogs/ApeFree.ApeDialogs/ApeFree.ApeDialogs.csproj" />
+</Solution>
