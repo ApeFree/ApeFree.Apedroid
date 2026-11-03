@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-android</TargetFramework>
+    <SupportedOSPlatformVersion>24</SupportedOSPlatformVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <IsTrimmable>true</IsTrimmable>
+
+    <Company>ApeFree</Company>
+    <Authors>Guijie Lee, ApeFree</Authors>
+    <Copyright>Copyright © 2022-2026 ApeFree, All Rights Reserved.</Copyright>
+    <Title>ApeFree.Apedroid</Title>
+    <Product>ApeFree.Apedroid</Product>
+    <Description>基于 .NET 10 的现代 Android 聚合扩展库与 UI 套件，提供符合 ApeFree.ApeDialogs 标准规范的 19 种 Material 3 高颜值弹窗、生命周期扩展与工具集。</Description>
+    <RepositoryUrl>https://github.com/ApeFree/ApeFree.Apedroid</RepositoryUrl>
+    <Version>1.0.0-alpha1</Version>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Google.Android.Material" Version="1.14.0.6" />
+    <PackageReference Include="Xamarin.AndroidX.DocumentFile" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup Condition="Exists('..\..\..\ApeFree.ApeDialogs\ApeFree.ApeDialogs\ApeFree.ApeDialogs.csproj')">
+    <ProjectReference Include="..\..\..\ApeFree.ApeDialogs\ApeFree.ApeDialogs\ApeFree.ApeDialogs.csproj" />
+  </ItemGroup>
+  <ItemGroup Condition="!Exists('..\..\..\ApeFree.ApeDialogs\ApeFree.ApeDialogs\ApeFree.ApeDialogs.csproj')">
+    <PackageReference Include="ApeFree.ApeDialogs" Version="1.0.2" />
+  </ItemGroup>
+</Project>
