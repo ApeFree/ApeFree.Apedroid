@@ -31,7 +31,8 @@ namespace ApeFree.Apedroid.Dialogs.Views
 
         public DataEntryView(Context context) : base(context)
         {
-            ScrollbarFadingEnabled = false;
+            VerticalScrollBarEnabled = false;
+            HorizontalScrollBarEnabled = false;
 
             _container = new LinearLayout(context)
             {

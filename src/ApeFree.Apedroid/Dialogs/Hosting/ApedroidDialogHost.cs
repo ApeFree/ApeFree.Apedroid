@@ -77,7 +77,8 @@ namespace ApeFree.Apedroid.Dialogs.Hosting
             // 28dp 大圆角卡片背景
             var cardDrawable = new GradientDrawable();
             cardDrawable.SetCornerRadius(context.DpToPx(28));
-            cardDrawable.SetColor(Color.Rgb(250, 250, 252));
+            bool isNight = (context.Resources?.Configuration?.UiMode & Android.Content.Res.UiMode.NightMask) == Android.Content.Res.UiMode.NightYes;
+            cardDrawable.SetColor(isNight ? Color.Rgb(32, 33, 37) : Color.Rgb(250, 250, 252));
             _rootLayout.Background = cardDrawable;
 
             // 1. 顶部醒目标签条 (Reminder Bar)
@@ -98,7 +99,7 @@ namespace ApeFree.Apedroid.Dialogs.Hosting
                 Typeface = Typeface.DefaultBold,
                 Visibility = ViewStates.Gone
             };
-            _tvTitle.SetTextColor(Color.Rgb(28, 27, 31));
+            _tvTitle.SetTextColor(isNight ? Color.Rgb(242, 242, 247) : Color.Rgb(28, 27, 31));
             var titleParams = new LinearLayout.LayoutParams(
                 ViewGroup.LayoutParams.MatchParent,
                 ViewGroup.LayoutParams.WrapContent
@@ -114,7 +115,7 @@ namespace ApeFree.Apedroid.Dialogs.Hosting
                 TextSize = 15,
                 Visibility = ViewStates.Gone
             };
-            _tvContent.SetTextColor(Color.Rgb(73, 69, 79));
+            _tvContent.SetTextColor(isNight ? Color.Rgb(174, 174, 178) : Color.Rgb(73, 69, 79));
             _tvContent.SetLineSpacing(context.DpToPx(3), 1.15f);
             var contentParams = new LinearLayout.LayoutParams(
                 ViewGroup.LayoutParams.MatchParent,

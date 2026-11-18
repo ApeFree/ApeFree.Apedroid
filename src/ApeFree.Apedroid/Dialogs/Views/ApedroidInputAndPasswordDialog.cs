@@ -40,7 +40,8 @@ namespace ApeFree.Apedroid.Dialogs.Views
             {
                 Text = settings.DefaultText ?? string.Empty
             };
-            _editText.SetTextColor(Color.Rgb(28, 27, 31));
+            bool isNight = (ctx.Resources?.Configuration?.UiMode & Android.Content.Res.UiMode.NightMask) == Android.Content.Res.UiMode.NightYes;
+            _editText.SetTextColor(isNight ? Color.Rgb(240, 240, 245) : Color.Rgb(28, 27, 31));
             _editText.TextSize = 16;
 
             if (settings.IsMultiline)
@@ -126,7 +127,8 @@ namespace ApeFree.Apedroid.Dialogs.Views
                 InputType = InputTypes.ClassText | InputTypes.TextVariationPassword,
                 Text = settings.DefaultText ?? string.Empty
             };
-            _editText.SetTextColor(Color.Rgb(28, 27, 31));
+            bool isNight = (ctx.Resources?.Configuration?.UiMode & Android.Content.Res.UiMode.NightMask) == Android.Content.Res.UiMode.NightYes;
+            _editText.SetTextColor(isNight ? Color.Rgb(240, 240, 245) : Color.Rgb(28, 27, 31));
             _editText.SetSingleLine(true);
             _editText.ImeOptions = ImeAction.Done;
             _editText.EditorAction += (s, e) =>

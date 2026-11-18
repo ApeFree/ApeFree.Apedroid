@@ -54,8 +54,9 @@ namespace ApeFree.Apedroid.Dialogs.Hosting
                 // 透明/无特定色，使用 Material Outlined / Tonal 默认方案
                 SetBackgroundColor(Color.Transparent);
                 StrokeWidth = Context.DpToPx(1);
-                StrokeColor = ColorStateList.ValueOf(Color.Rgb(180, 180, 180));
-                SetTextColor(Color.Rgb(33, 33, 33));
+                bool isNight = (Context.Resources?.Configuration?.UiMode & UiMode.NightMask) == UiMode.NightYes;
+                StrokeColor = ColorStateList.ValueOf(isNight ? Color.Rgb(80, 80, 85) : Color.Rgb(180, 180, 180));
+                SetTextColor(isNight ? Color.Rgb(220, 220, 225) : Color.Rgb(33, 33, 33));
             }
             else
             {

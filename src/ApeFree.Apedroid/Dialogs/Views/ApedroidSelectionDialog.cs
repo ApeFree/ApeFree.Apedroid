@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Android.Graphics;
 using System.Linq;
 using Android.Content;
 using Android.Views;
@@ -38,7 +39,8 @@ namespace ApeFree.Apedroid.Dialogs.Views
             var ctx = Context!;
             var scrollView = new NestedScrollView(ctx)
             {
-                ScrollbarFadingEnabled = false
+                VerticalScrollBarEnabled = false,
+                HorizontalScrollBarEnabled = false
             };
 
             var radioGroup = new RadioGroup(ctx)
@@ -59,6 +61,8 @@ namespace ApeFree.Apedroid.Dialogs.Views
                     Text = displayText,
                     TextSize = 15
                 };
+                bool isNight = (ctx.Resources?.Configuration?.UiMode & Android.Content.Res.UiMode.NightMask) == Android.Content.Res.UiMode.NightYes;
+                rb.SetTextColor(isNight ? Color.Rgb(240, 240, 245) : Color.Rgb(28, 27, 31));
                 int paddingV = ctx.DpToPx(8);
                 rb.SetPadding(ctx.DpToPx(8), paddingV, ctx.DpToPx(8), paddingV);
 
@@ -131,7 +135,8 @@ namespace ApeFree.Apedroid.Dialogs.Views
             var ctx = Context!;
             var scrollView = new NestedScrollView(ctx)
             {
-                ScrollbarFadingEnabled = false
+                VerticalScrollBarEnabled = false,
+                HorizontalScrollBarEnabled = false
             };
 
             var layout = new LinearLayout(ctx)
@@ -152,6 +157,8 @@ namespace ApeFree.Apedroid.Dialogs.Views
                     TextSize = 15,
                     Checked = defaultSet.Contains(item)
                 };
+                bool isNight = (ctx.Resources?.Configuration?.UiMode & Android.Content.Res.UiMode.NightMask) == Android.Content.Res.UiMode.NightYes;
+                cb.SetTextColor(isNight ? Color.Rgb(240, 240, 245) : Color.Rgb(28, 27, 31));
                 int paddingV = ctx.DpToPx(8);
                 cb.SetPadding(ctx.DpToPx(8), paddingV, ctx.DpToPx(8), paddingV);
 

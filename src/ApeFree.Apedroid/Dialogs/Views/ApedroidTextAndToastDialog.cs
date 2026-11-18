@@ -26,7 +26,8 @@ namespace ApeFree.Apedroid.Dialogs.Views
             var ctx = Context!;
             var scrollView = new NestedScrollView(ctx)
             {
-                ScrollbarFadingEnabled = false
+                VerticalScrollBarEnabled = false,
+                HorizontalScrollBarEnabled = false
             };
 
             var tvText = new TextView(ctx)
